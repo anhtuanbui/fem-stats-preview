@@ -1,0 +1,20 @@
+@import './shared/variables.scss';
+
+body, html {
+  margin: 0;
+  font-family: $typography__font-family-main;
+  font-size: $typography__font-size;
+  background-color: $color__primary--very-dark-blue;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include mobile {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
